@@ -1,19 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <appNavbar></appNavbar>
+ <div :style="bgImg">
+ <app-campain></app-campain>
+ <app-card></app-card>
+ </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import appNavbar from "./components/Navbar.vue";
+import appCampain from "./components/Campain.vue";
+import appCard from "./components/Card.vue"
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    appNavbar,
+    appCampain,
+    appCard
+
+  },
+    data() {
+      return {
+        bgImg: {
+          backgroundImage: `url(${require('./assets/backgorunddd.jpg')})`
+        }
+      }
+    }
   }
-}
+
 </script>
 
 <style>
@@ -23,6 +39,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 </style>
