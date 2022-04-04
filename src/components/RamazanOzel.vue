@@ -4,7 +4,7 @@
          <span class="float-left text-white text-bold">Ramazana Özel Ürünler</span>
         </div> 
              <div class="md:container md:m-auto sm:my-auto mt-3 xs:mt-4">
-                 <div class="justify-center  lg:grid grid-cols-2 xs:grid grid-cols-1 gap-2 m-auto">
+                 <div class="justify-center grid lg:grid-cols-2 xs:grid-cols-1 gap-2 m-auto">
                      <div class="rounded-lg bg-white mt-1"  v-for="item in ramazanPaketleri" :key="item.id">
                          <div class="rounded-lg sm:p-1 md:p-3 md:m-4 object-center bg-white grid grid-cols-2">
                              <div>
@@ -78,8 +78,3 @@ export default {
     }
 }
 </script>
-<style scoped>
-.textsm {
-    
-}
-</style>

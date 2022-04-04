@@ -2,7 +2,6 @@
 <div class="flex flex-col">
 <img class="overflow-hidden" src="../assets/ramazan-görseli 1.jpg" alt="image">
 </div>
-
 </template>
 <script>
 export default {

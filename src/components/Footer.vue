@@ -1,5 +1,4 @@
 <template>
-
 <footer class="text-center lg:text-left md:text-left bg-white text-black mt-0">
     <div class="container">
     <div class="lg:ml-64">
@@ -126,13 +125,6 @@
             <img src="../assets/galery.svg">
           </a>
          </div>
-       
-         
-          
-        
-        
-        
-        
         </div>
         
         <h5 class=" font-normal mb-4 flex justify-center md:justify-start text-black">
