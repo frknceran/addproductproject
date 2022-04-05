@@ -7,48 +7,44 @@
                  <div class="justify-center grid lg:grid-cols-2 xs:grid-cols-1 gap-2 m-auto">
                      <div class="rounded-lg bg-white mt-1"  v-for="item in ramazanPaketleri" :key="item.id">
                          <div class="rounded-lg sm:p-1 md:p-3 md:m-4 object-center bg-white grid grid-cols-2">
-                             <div>
-                                 <a>
-                                 <img class="rounded-t-lg m-auto" :src="item.src" alt="/alt"/>
-                                 </a>
+                             <div class="flex items-center">
+                                 <img class="rounded m-auto" :src="item.src" alt="/alt"/>
                              </div>
-                                <div>
-                                     <br><br>
-                                      <span style="">{{item.name}}</span><br><br>
-                                      <h1 style="color: #45AC4C; font-weight: 700;">{{item.price}} TL</h1><br>
-                                      <button type="button" class="button px-4 py-2.5 shadow-md transition text-white rounded-lg font-semibold" style="background-color: rgb(245 158 11);">Sepete Ekle</button>
-                                </div>
+                            <div class="flex flex-col">
+                                <span class="my-12" style="">{{item.name}}</span>
+                                <h1 class="my-12" style="color: #45AC4C; font-weight: 700;">{{item.price}} TL</h1>
+                                <button type="button" class="button px-4 py-2.5 my-12 shadow-md transition text-white rounded-lg font-semibold" style="background-color: rgb(245 158 11);">Sepete Ekle</button>
+                            </div>
                          </div>
                      </div>
                  </div>
              </div>
-             <div class="grid grid-cols-2 md:container md:mx-auto mb-4">
-             <div class="mt-3 justify-center order-last grid grid-cols-2 "> 
-                  <button type="button" class="text-black bg-white  font-medium rounded-lg text-sm text-center">
+             <div class="w-full flex justify-between md:mx-auto mb-4">
+                <div class="mt-3">
+                  <button type="button" class="text-black bg-white font-medium rounded-lg px-8 py-2 text-sm text-center">
                     8 Ürün Göster
                     </button>
                 </div>
-             <div class="mt-3 justify-center order-last grid grid-cols-2 ">
-                
-                 <div class="">
-                  <button type="button" class="text-black bg-white font-medium rounded-lg text-sm text-center">
-                    ❮ Önceki Sayfa 
+                <div class="flex flex-row space-between mt-3">
+                    <button type="button" class="text-black bg-white font-medium rounded-lg px-2 text-sm text-center">
+                        ❮ Önceki Sayfa 
                     </button>
-                         <button type="button" class="text-black bg-white font-medium rounded-lg text-sm text-center">
-                          1 
-                         </button>
-                         <button type="button" class="text-black-700 border hover:text-black hover:bg-white font-medium rounded-lg text-sm  text-center mr-2">
-                          2
-                         </button>
-                         <button type="button" class="text-black-700 border hover:text-black hover:bg-white font-medium rounded-lg text-sm mr-2">
-                          3
-                         </button>
-                         <button type="button" class="text-black bg-white font-medium rounded-lg text-sm text-center ">
-                          Sonraki Sayfa ❯
-                       </button> 
-                 </div>
-             </div> 
-         </div>
+                    <div class="flex flex-row mx-4">
+                        <button type="button" class="text-black bg-white px-4 py-2 font-medium rounded-lg text-sm text-center mr-2">
+                        1 
+                        </button>
+                        <button type="button" class="text-black-700 border px-4 py-2 hover:text-black hover:bg-white font-medium rounded-lg text-sm  text-center mr-2">
+                        2
+                        </button>
+                        <button type="button" class="text-black-700 border px-4 py-2 hover:text-black hover:bg-white font-medium rounded-lg text-sm mr-2">
+                        3
+                        </button>
+                    </div>
+                    <button type="button" class="text-black bg-white font-medium rounded-lg text-sm text-center px-2">
+                    Sonraki Sayfa ❯
+                    </button> 
+                </div> 
+            </div>
    </div>
 </template>
 <script>

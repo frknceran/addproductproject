@@ -114,7 +114,7 @@
               <h6 class="font-bold mb-4 flex justify-center md:justify-start">
                 PttAVM Mobil Uygulamalarımız
               </h6>
-              <div class="grid lg:grid-rows-3">
+              <div class="flex flex-row md:flex-col">
                 <div>
                   <a href="#!">
                     <img src="../assets/pttmbl.svg" />
